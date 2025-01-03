@@ -1,6 +1,6 @@
 import datetime
 import time
-import os
+import winsound
 
 def alarm_clock():
     print("Welcome to the Alarm Clock!")
@@ -23,11 +23,10 @@ def alarm_clock():
             if current_time == alarm_time:
                 print("Wake up! It's time!")
                 
-                # Optional: Play a sound (on systems with aplay installed)
-                try:
-                    os.system("echo -e '\a'")  # Beep sound
-                except:
-                    pass
+                # Play a beep sound using winsound
+                for _ in range(5):  # Beep 5 times
+                    winsound.Beep(1000, 500)  # Frequency: 1000Hz, Duration: 500ms
+                    time.sleep(0.5)  # Pause between beeps
                 
                 break
             time.sleep(1)  # Check every second
@@ -36,4 +35,8 @@ def alarm_clock():
         print("Invalid time format. Please use HH:MM:SS (24-hour format).")
 
 # Run the alarm clock
-alarm_clock()
+if __name__ == "__main__":
+    alarm_clock()
+
+            
+    
