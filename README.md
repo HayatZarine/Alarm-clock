@@ -1,6 +1,6 @@
 # Alarm Clock by Python
 
-This project is an Alarm Clock implemented in Python. It allows users to set alarms for specific times and notifies them when the alarm goes off.
+This project is an Alarm Clock implemented in Python. It allows users to set alarms for specific times and notifies them when the alarm goes off. This is an easy level project but a really useful one!
 
 ## Features
 
