@@ -3,7 +3,7 @@ import time
 import winsound
 
 def alarm_clock():
-    print("Welcome to the Alarm Clock!")
+    print("Welcome to my pretty Alarm Clock!")
     alarm_time = input("Enter the alarm time in HH:MM:SS format (24-hour clock): ")
     
     try:
